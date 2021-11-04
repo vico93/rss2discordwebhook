@@ -8,4 +8,4 @@ do
 	echo "[INFO] Novo feed encontrado: $rec_column1 - Link: $rec_column2"
 	# Para evitar rate limit
 	sleep 1
-done < <(rsstail -i $5 --format '%(title)s|%(link)s\n' -u $1  -n 0)
+done < <(rsstail -i $5 --format '%(title)s|%(link)s\n' -u $1  -n 0 -r)
